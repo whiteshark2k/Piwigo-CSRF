@@ -20,6 +20,6 @@ Step 4: Request Edit Album CSRF to test0123 after victim clicks on trap page
 Step 5: Album name changed to test0123 successfully
 ![Alt text](test4.jpg)
 
-We can go into the processing code in the pwg.categories.php file </br>
+Step 6: We can go into the processing code in the pwg.categories.php file </br>
 ![Alt text](test6.jpg)
 It can be seen that in this function, from line 888->891, the application only checks the pwg_token if it exists, in case the pwg_token does not exist, it will be completely ignored.
